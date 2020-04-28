@@ -240,3 +240,30 @@ a.nav_active {
 .count_3:after {
   background: linear-gradient(to right, #10c9c3 65%, #d8d8d8 35%);
 }
+
+/* characteristics */
+
+.characteristics {
+  height: 242px;
+  background-color: #10c9c3;
+}
+
+.characteristics__inner {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 93px;
+}
+
+.characteristics__inner li {
+  padding-right: 80px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  list-style-type: none;
+}
+
+.characteristics__inner li span {
+  margin-bottom: 12px;
+  display: inline-block;
+  font-size: 18px;
+}
