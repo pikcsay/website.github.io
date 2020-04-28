@@ -53,14 +53,12 @@ table {
   padding: 20px 0;
   margin-top: 35px;
   opacity: 0.9;
-}
-
-.button a {
   color: #f9dfdf;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
 }
 
 .button:hover {
