@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.button {
+  width: 182px;
+  display: block;
+  color: #f9dfdf;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #10c9c3;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 35px;
+}
+/*
+  ========================================
+  Сетка
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1172px;
+}
+
+/* header */
+.header {
+  height: 670px;
+  background-color: #e9e9e9;
+}
+
+.header__inner {
+  display: flex;
+  flex-basis: 80px;
+  justify-content: space-between;
+  padding-top: 35px;
+  flex-grow: 2;
+}
+
+.logo {
+  padding-left: 5px;
+}
+
+.nav_header a{
+  padding-left: 25px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #505050;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.nav_header a:last-of-type {
+  padding-right: 95px;
+}
+
+.nav_header a:hover {
+  color: #73d4d0;
+}
+
+a.nav_active {
+  color: #73d4d0;
+}
+
+.hero {
+  float: right;
+  width: 530px;
+  margin-top: 170px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  font-family: 'Montserrat', sans-serif;
+  color: #1d1d1d;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
+.hero span {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: #787878;
+  line-height: 27px;
+}
+
+/* about */
+.about {
+  height: 425px;
+  background-color: #fff;
+}
+
+.about__inner {
+  margin: 0 auto;
+  height: 640px;
+  max-width: 685px;
+  width: 100%;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.about__inner h1 {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: #1d1d1d;
+  padding-bottom: 30px;
+  font-weight: 600;
+}
+
+.about__inner article {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #818181;
+  line-height: 25px;
+}
+
+.about__inner img {
+  padding-top: 25px;
+}
+
+
+/* skills */
+.skills {
+  height: 571px;
+  background: linear-gradient(to right, #f8f9f9 50%, #e9e9e9 50%);
+}
+
+.skills__inner {
+  float: left;
+  max-width: 505px;
+  width: 100%;
+  margin-top: 155px;
+  height: 270px;
+  padding-right: 5px;
+}
+
+.skills__inner h1 {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: #1d1d1d;
+  padding-bottom: 30px;
+  font-weight: 600;
+}
+
+.skills__inner span {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: #1d1d1d;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.skills__inner div {
+  margin-bottom: 30px;
+}
+
+.count_1:after, .count_2:after, .count_3:after {
+  content: '';
+  height: 3px;
+  max-width: 500px;
+  width: 100%;
+  display: block;
+  margin-top: 15px;
+}
+
+.count_1:after {
+  background: linear-gradient(to right, #10c9c3 75%, #d8d8d8 25%);
+}
+
+.count_2:after {
+  background: linear-gradient(to right, #10c9c3 90%, #d8d8d8 10%);
+}
+
+.count_3:after {
+  background: linear-gradient(to right, #10c9c3 65%, #d8d8d8 35%);
+}
