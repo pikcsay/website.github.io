@@ -48,14 +48,27 @@ table {
 .button {
   width: 182px;
   display: block;
-  color: #f9dfdf;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
   background-color: #10c9c3;
   text-align: center;
   padding: 20px 0;
   margin-top: 35px;
+  opacity: 0.9;
+}
+
+.button a {
+  color: #f9dfdf;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.button:active {
+  opacity: 1;
 }
 /*
   ========================================
